@@ -6,7 +6,7 @@ import storiesData from "./data/stories.json";
 
 type Story = { id: number; image: string };
 
-const App = () => {
+const App: React.FC = () => {
   const [stories, setStories] = useState<Story[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 
